@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>Latest</LangVersion>
+    <Copyright>Ilya Belyanskiy 2025</Copyright>
+    <Authors>Belyansky Ilya</Authors>
+    <PackageProjectUrl>https://github.com/win7user10/Laraue.Apps.MarkdownTranspiler</PackageProjectUrl>
+    <IsPackable>false</IsPackable>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <LaraueMarkdownInterpreterVersion>0.0.6</LaraueMarkdownInterpreterVersion>
+    <ScalarVersion>2.11.0</ScalarVersion>
+  </PropertyGroup>
+</Project>

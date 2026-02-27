@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B45F5686-688E-4A5C-9AD4-B58C7F758A2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownTranspiler.WebApi", "src\Laraue.Apps.MarkdownTranspiler.WebApi\Laraue.Apps.MarkdownTranspiler.WebApi.csproj", "{C50BA1F9-58A4-475B-81A6-8E0967101E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownTranspiler.Contracts", "src\Laraue.Apps.MarkdownTranspiler.Contracts\Laraue.Apps.MarkdownTranspiler.Contracts.csproj", "{9393854F-6258-480D-B3AC-74BB2AFA11B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.MarkdownTranspiler.Services", "src\Laraue.Apps.MarkdownTranspiler.Services\Laraue.Apps.MarkdownTranspiler.Services.csproj", "{CBA1214F-A571-489D-9A64-222AB37AFA6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C50BA1F9-58A4-475B-81A6-8E0967101E43} = {B45F5686-688E-4A5C-9AD4-B58C7F758A2A}
+		{9393854F-6258-480D-B3AC-74BB2AFA11B9} = {B45F5686-688E-4A5C-9AD4-B58C7F758A2A}
+		{CBA1214F-A571-489D-9A64-222AB37AFA6B} = {B45F5686-688E-4A5C-9AD4-B58C7F758A2A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C50BA1F9-58A4-475B-81A6-8E0967101E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50BA1F9-58A4-475B-81A6-8E0967101E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50BA1F9-58A4-475B-81A6-8E0967101E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50BA1F9-58A4-475B-81A6-8E0967101E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9393854F-6258-480D-B3AC-74BB2AFA11B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9393854F-6258-480D-B3AC-74BB2AFA11B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9393854F-6258-480D-B3AC-74BB2AFA11B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9393854F-6258-480D-B3AC-74BB2AFA11B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA1214F-A571-489D-9A64-222AB37AFA6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA1214F-A571-489D-9A64-222AB37AFA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA1214F-A571-489D-9A64-222AB37AFA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA1214F-A571-489D-9A64-222AB37AFA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
