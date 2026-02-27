@@ -5,9 +5,9 @@ name: .NET
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "**" ]
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
       run: dotnet test -c Release --no-build
     
     - name: Upload
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       uses: marcodallasanta/ssh-scp-deploy@v1.2.0
       with:
        host: ${{ secrets.SSH_HOST }} # "example.com"
@@ -37,5 +37,5 @@ jobs:
        user: ${{ secrets.SSH_USER }} # "user"
        password: ${{ secrets.SSH_PASSWORD }} # "password"
        local: src/Laraue.Apps.MarkdownTranspiler.WebApi/bin/Release/net10.0/*
-       remote: "/home/laraue/backend-learn-language"
+       remote: "/home/laraue/backend-markdown-transpiler"
        post_upload: echo "Uploaded successfully"
