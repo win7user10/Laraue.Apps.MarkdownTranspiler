@@ -15,7 +15,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <LaraueMarkdownInterpreterVersion>0.0.6</LaraueMarkdownInterpreterVersion>
+    <LaraueMarkdownInterpreterVersion>0.1.7</LaraueMarkdownInterpreterVersion>
     <ScalarVersion>2.11.0</ScalarVersion>
   </PropertyGroup>
 </Project>
