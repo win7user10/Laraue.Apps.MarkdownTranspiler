@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
+builder.Services.AddHealthChecks();
 builder.Services.AddSingleton<IMarkdownTranspilerService, MarkdownTranspilerService>();
 builder.Services.AddSingleton<Laraue.Interpreter.Markdown.IMarkdownTranspiler, Laraue.Interpreter.Markdown.MarkdownTranspiler>();
 
@@ -34,5 +35,6 @@ app.UseCors(corsPolicyBuilder =>
         .AllowAnyMethod()
         .AllowAnyHeader());
 
+app.MapHealthChecks("/_health");
 app.MapControllers();
 app.Run();
